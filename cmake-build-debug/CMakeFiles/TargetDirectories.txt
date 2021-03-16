@@ -1,0 +1,3 @@
+C:/Users/stdd0/CLionProjects/StringLibrary1/cmake-build-debug/CMakeFiles/StringLibrary1.dir
+C:/Users/stdd0/CLionProjects/StringLibrary1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/stdd0/CLionProjects/StringLibrary1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
