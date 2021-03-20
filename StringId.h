@@ -10,10 +10,9 @@
 
 class StringId : public Stroka {
 protected:
-    int length;
-    char content[];
+
 public:
-    StringId(int length, char content[]) {
+    StringId(int length1, char *content1) : Stroka(length1, content1) {
         this->length = length;
         for(int i = 1; i <= length; i++) {
             this->content[i] = content[i];

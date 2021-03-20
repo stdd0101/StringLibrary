@@ -10,17 +10,22 @@
 
 class BinaryString : public Stroka {
 protected:
-    int length;
-    char content[];
+    int *binaryContent;
 public:
-    BinaryString(int length, char content[]) {
+    BinaryString(int length1, char *content1) : Stroka(length1, content1) {
         this->length = length;
-        for(int i = 1; i <= length; i++) {
+        for(int i = 0; i < length; i++) {
             this->content[i] = content[i];
         }
     }
 
     //TODO: бинарные операции со строками;
+    int ctoi();
+    char *itoc(int value, int length);
+    int multipleBinaries(int x, int y);
+    int sumBinaries(int x, int y);
+    int subtractBinaries(int x, int y);
+    int is_neg(int value, int length);
 };
 
 

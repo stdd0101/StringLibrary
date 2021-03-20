@@ -9,21 +9,25 @@
 class Stroka {
 protected:
     int length;
-    char content[];
+    char *content;
 public:
-    Stroka(int length, char content[]) {
+    Stroka(int length, char *content) {
         this->length = length;
-        for(int i = 1; i <= length; i++) {
+        for(int i = 0; i < length; i++) {
             this->content[i] = content[i];
         }
     }
     ~Stroka() = default;
-    void Show();
+    void show();
     void toUpper();
     void toLower();
-    void addSymbolBegin();
-    void addSymbolEnd();
+    void addSymbolBegin(char adding);
+    void addSymbolEnd(char adding);
+    void concat(char addition[]);
+    int size(char *ptr);
 
+    void setLength(int length);
+    void setContent(char *content);
     //TODO: конкатенация строк;
 };
 
