@@ -11,7 +11,8 @@ protected:
     int length;
     char *content;
 public:
-    Stroka(int length, char *content) {
+    Stroka() = default;
+    Stroka(int length, const char *content) {
         this->length = length;
         for(int i = 0; i < length; i++) {
             this->content[i] = content[i];
